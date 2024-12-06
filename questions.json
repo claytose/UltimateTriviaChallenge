@@ -1,0 +1,308 @@
+{
+  "Science": [
+    {
+      "question": "What is the chemical symbol for the element with the highest atomic number?",
+      "choices": ["Og", "Uuo", "Lv", "Ts"],
+      "answer": "Og"
+    },
+    {
+      "question": "Which planet has the most moons?",
+      "choices": ["Jupiter", "Saturn", "Uranus", "Neptune"],
+      "answer": "Saturn"
+    },
+    {
+      "question": "What is the most abundant gas in the Earth's atmosphere?",
+      "choices": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Argon"],
+      "answer": "Nitrogen"
+    },
+    {
+      "question": "What is the hardest natural substance on Earth?",
+      "choices": ["Diamond", "Graphite", "Corundum", "Topaz"],
+      "answer": "Diamond"
+    },
+    {
+      "question": "What is the speed of light in a vacuum (in km/s)?",
+      "choices": ["300,000", "150,000", "299,792", "250,000"],
+      "answer": "299,792"
+    },
+    {
+      "question": "What is the powerhouse of the cell?",
+      "choices": ["Nucleus", "Mitochondria", "Ribosome", "Golgi Apparatus"],
+      "answer": "Mitochondria"
+    },
+    {
+      "question": "What is the chemical formula for table salt?",
+      "choices": ["NaCl", "KCl", "NaF", "CaCl2"],
+      "answer": "NaCl"
+    },
+    {
+      "question": "What is the most common isotope of hydrogen?",
+      "choices": ["Protium", "Deuterium", "Tritium", "Quadrium"],
+      "answer": "Protium"
+    },
+    {
+      "question": "What is the second most abundant element in the Earth's crust?",
+      "choices": ["Silicon", "Oxygen", "Aluminum", "Iron"],
+      "answer": "Silicon"
+    },
+    {
+      "question": "What is the most common type of star in the Milky Way galaxy?",
+      "choices": ["Red Dwarf", "White Dwarf", "Neutron Star", "Blue Giant"],
+      "answer": "Red Dwarf"
+    },
+    {
+      "question": "What is the largest organ in the human body?",
+      "choices": ["Liver", "Skin", "Heart", "Lungs"],
+      "answer": "Skin"
+    },
+    {
+      "question": "What is the chemical symbol for gold?",
+      "choices": ["Au", "Ag", "Pb", "Fe"],
+      "answer": "Au"
+    },
+    {
+      "question": "What is the boiling point of water at sea level (in Celsius)?",
+      "choices": ["100", "90", "80", "110"],
+      "answer": "100"
+    },
+    {
+      "question": "What is the most abundant element in the universe?",
+      "choices": ["Hydrogen", "Helium", "Oxygen", "Carbon"],
+      "answer": "Hydrogen"
+    },
+    {
+      "question": "What is the primary gas found in the sun?",
+      "choices": ["Hydrogen", "Helium", "Oxygen", "Carbon"],
+      "answer": "Hydrogen"
+    },
+    {
+      "question": "What is the chemical formula for water?",
+      "choices": ["H2O", "CO2", "O2", "H2O2"],
+      "answer": "H2O"
+    },
+    {
+      "question": "What is the most common blood type in humans?",
+      "choices": ["O+", "A+", "B+", "AB+"],
+      "answer": "O+"
+    },
+    {
+      "question": "What is the smallest unit of life?",
+      "choices": ["Cell", "Atom", "Molecule", "Organ"],
+      "answer": "Cell"
+    },
+    {
+      "question": "What is the chemical symbol for iron?",
+      "choices": ["Fe", "Ir", "In", "I"],
+      "answer": "Fe"
+    },
+    {
+      "question": "What is the most common type of rock on the Earth's surface?",
+      "choices": ["Igneous", "Sedimentary", "Metamorphic", "Volcanic"],
+      "answer": "Sedimentary"
+    }
+  ],
+  "Math": [
+    {
+      "question": "What is the derivative of sin(x)?",
+      "choices": ["cos(x)", "-sin(x)", "-cos(x)", "tan(x)"],
+      "answer": "cos(x)"
+    },
+    {
+      "question": "What is the integral of 1/x dx?",
+      "choices": ["ln(x)", "e^x", "x^2/2", "1/x^2"],
+      "answer": "ln(x)"
+    },
+    {
+      "question": "What is the value of the golden ratio (φ)?",
+      "choices": ["1.618", "2.718", "3.141", "1.414"],
+      "answer": "1.618"
+    },
+    {
+      "question": "What is the sum of the interior angles of a hexagon?",
+      "choices": ["720 degrees", "540 degrees", "360 degrees", "480 degrees"],
+      "answer": "720 degrees"
+    },
+    {
+      "question": "What is the solution to the equation x^2 - 4x + 4 = 0?",
+      "choices": ["x = 2", "x = 4", "x = 0", "x = -2"],
+      "answer": "x = 2"
+    },
+    {
+      "question": "What is the value of e (Euler's number) to two decimal places?",
+      "choices": ["2.71", "3.14", "1.62", "1.41"],
+      "answer": "2.71"
+    },
+    {
+      "question": "What is the area of a circle with radius r?",
+      "choices": ["πr^2", "2πr", "πr", "r^2"],
+      "answer": "πr^2"
+    },
+    {
+      "question": "What is the Pythagorean theorem?",
+      "choices": ["a^2 + b^2 = c^2", "a^2 - b^2 = c^2", "a^2 + b = c^2", "a + b^2 = c^2"],
+      "answer": "a^2 + b^2 = c^2"
+    },
+    {
+      "question": "What is the value of the square root of 144?",
+      "choices": ["12", "14", "16", "10"],
+      "answer": "12"
+    },
+    {
+      "question": "What is the sum of the first 5 prime numbers?",
+      "choices": ["28", "15", "18", "20"],
+      "answer": "28"
+    },
+    {
+      "question": "What is the value of π (pi) to two decimal places?",
+      "choices": ["3.14", "2.71", "1.62", "1.41"],
+      "answer": "3.14"
+    },
+    {
+      "question": "What is the formula for the area of a triangle?",
+      "choices": ["1/2 * base * height", "base * height", "base + height", "base - height"],
+      "answer": "1/2 * base * height"
+    },
+    {
+      "question": "What is the value of the square root of 81?",
+      "choices": ["9", "8", "7", "6"],
+      "answer": "9"
+    },
+    {
+      "question": "What is the formula for the circumference of a circle?",
+      "choices": ["2πr", "πr^2", "πd", "2r"],
+      "answer": "2πr"
+    },
+    {
+      "question": "What is the value of the cube root of 27?",
+      "choices": ["3", "2", "4", "5"],
+      "answer": "3"
+    },
+    {
+      "question": "What is the value of the factorial of 4 (4!)?",
+      "choices": ["24", "16", "12", "8"],
+      "answer": "24"
+    },
+    {
+      "question": "What is the value of the logarithm of 100 to the base 10 (log10(100))?",
+      "choices": ["2", "3", "1", "0"],
+      "answer": "2"
+    },
+    {
+      "question": "What is the value of the sine of 30 degrees?",
+      "choices": ["0.5", "1", "0", "-0.5"],
+      "answer": "0.5"
+    },
+    {
+      "question": "What is the value of the cosine of 0 degrees?",
+      "choices": ["1", "0", "-1", "0.5"],
+      "answer": "1"
+    },
+    {
+      "question": "What is the value of the tangent of 45 degrees?",
+      "choices": ["1", "0", "-1", "0.5"],
+      "answer": "1"
+    }
+  ],
+  "Social Studies": [
+    {
+      "question": "Who was the first President of the United States?",
+      "choices": ["George Washington", "Thomas Jefferson", "Abraham Lincoln", "John Adams"],
+      "answer": "George Washington"
+    },
+    {
+      "question": "What year did the American Civil War end?",
+      "choices": ["1865", "1861", "1877", "1850"],
+      "answer": "1865"
+    },
+    {
+      "question": "What is the capital of Canada?",
+      "choices": ["Ottawa", "Toronto", "Vancouver", "Montreal"],
+      "answer": "Ottawa"
+    },
+    {
+      "question": "What is the longest river in the world?",
+      "choices": ["Nile", "Amazon", "Yangtze", "Mississippi"],
+      "answer": "Nile"
+    },
+    {
+      "question": "Who wrote the Declaration of Independence?",
+      "choices": ["Thomas Jefferson", "George Washington", "Benjamin Franklin", "John Adams"],
+      "answer": "Thomas Jefferson"
+    },
+    {
+      "question": "What year did World War II end?",
+      "choices": ["1945", "1941", "1939", "1950"],
+      "answer": "1945"
+    },
+    {
+      "question": "What is the largest country by land area?",
+      "choices": ["Russia", "Canada", "China", "United States"],
+      "answer": "Russia"
+    },
+    {
+      "question": "What is the smallest country in the world?",
+      "choices": ["Vatican City", "Monaco", "Nauru", "San Marino"],
+      "answer": "Vatican City"
+    },
+    {
+      "question": "Who was the first woman to fly solo across the Atlantic Ocean?",
+      "choices": ["Amelia Earhart", "Anne Frank", "Marie Curie", "Ada Lovelace"],
+      "answer": "Amelia Earhart"
+    },
+    {
+      "question": "What is the most widely spoken language in the world?",
+      "choices": ["Mandarin Chinese", "Spanish", "English", "Hindi"],
+      "answer": "Mandarin Chinese"
+    },
+    {
+      "question": "What is the capital of France?",
+      "choices": ["Paris", "London", "Berlin", "Madrid"],
+      "answer": "Paris"
+    },
+    {
+      "question": "Who was the first man to walk on the moon?",
+      "choices": ["Neil Armstrong", "Buzz Aldrin", "Michael Collins", "Yuri Gagarin"],
+      "answer": "Neil Armstrong"
+    },
+    {
+      "question": "What is the largest ocean on Earth?",
+      "choices": ["Pacific Ocean", "Atlantic Ocean", "Indian Ocean", "Arctic Ocean"],
+      "answer": "Pacific Ocean"
+    },
+    {
+      "question": "What is the capital of Japan?",
+      "choices": ["Tokyo", "Osaka", "Kyoto", "Nagoya"],
+      "answer": "Tokyo"
+    },
+    {
+      "question": "Who was the first President of the United States?",
+      "choices": ["George Washington", "Thomas Jefferson", "Abraham Lincoln", "John Adams"],
+      "answer": "George Washington"
+    },
+    {
+      "question": "What year did the American Civil War begin?",
+      "choices": ["1861", "1865", "1877", "1850"],
+      "answer": "1861"
+    },
+    {
+      "question": "What is the capital of Italy?",
+      "choices": ["Rome", "Milan", "Venice", "Florence"],
+      "answer": "Rome"
+    },
+    {
+      "question": "What is the largest desert in the world?",
+      "choices": ["Sahara Desert", "Gobi Desert", "Kalahari Desert", "Arctic Desert"],
+      "answer": "Sahara Desert"
+    },
+    {
+      "question": "What is the capital of Australia?",
+      "choices": ["Canberra", "Sydney", "Melbourne", "Brisbane"],
+      "answer": "Canberra"
+    },
+    {
+      "question": "Who was the first woman to win a Nobel Prize?",
+      "choices": ["Marie Curie", "Rosalind Franklin", "Ada Lovelace", "Dorothy Hodgkin"],
+      "answer": "Marie Curie"
+    }
+  ]
+}
