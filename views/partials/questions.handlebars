@@ -1,0 +1,11 @@
+<div class="question" data-id="{{id}}" data-category="{{category}}">
+    <p class="question-text">{{question}}</p>
+    <form>
+        {{#each choices}}
+            <label>
+                <input type="radio" name="answer" value="{{this}}" required> {{this}}
+            </label><br>
+        {{/each}}
+        <button type="submit">Submit</button>
+    </form>
+</div>
