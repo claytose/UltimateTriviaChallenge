@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Initialize the game
   function initGame() {
-    // Replace this with a call to your backend to fetch game data
+    // Replace this with a call to backend to fetch game data
     fetch("/api/game-data")
       .then((response) => response.json())
       .then((data) => {
