@@ -1,0 +1,25 @@
+<div style="display: flex;">
+  <div style="flex: 1;">
+    <h1>Question</h1>
+    <p>{{question}}</p>
+    <form action="/game" method="post" style="display: flex; flex-direction: column;">
+      {{#each choices}}
+        <button type="submit" name="answer" value="{{this}}" style="display: block; width: 100%; margin-bottom: 10px;">{{this}}</button>
+      {{/each}}
+    </form>
+  </div>
+</div>
+<div class="sidebar">
+  <div class="box">
+    <p>Lives: {{lives}}</p>
+  </div>
+  <div class="box">
+    <p>Score: {{score}}</p>
+  </div>
+  <div class="box">
+    <p id="timer">Time left: 10</p>
+  </div>
+</div>
+{{#if message}}
+  <p>{{message}}</p>
+{{/if}}

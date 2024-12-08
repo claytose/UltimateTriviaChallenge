@@ -99,58 +99,43 @@
       "question": "What is the most common type of rock on the Earth's surface?",
       "choices": ["Igneous", "Sedimentary", "Metamorphic", "Volcanic"],
       "answer": "Sedimentary"
+    },
+    {
+      "question": "What is the chemical symbol for silver?",
+      "choices": ["Ag", "Au", "Si", "Pb"],
+      "answer": "Ag"
+    },
+    {
+      "question": "Which planet is known as the Red Planet?",
+      "choices": ["Mars", "Venus", "Jupiter", "Saturn"],
+      "answer": "Mars"
+    },
+    {
+      "question": "What is the main gas found in the air we breathe?",
+      "choices": ["Nitrogen", "Oxygen", "Carbon Dioxide", "Helium"],
+      "answer": "Nitrogen"
+    },
+    {
+      "question": "What is the largest planet in our solar system?",
+      "choices": ["Jupiter", "Saturn", "Neptune", "Earth"],
+      "answer": "Jupiter"
+    },
+    {
+      "question": "What is the process by which plants make their food?",
+      "choices": ["Photosynthesis", "Respiration", "Transpiration", "Fermentation"],
+      "answer": "Photosynthesis"
     }
   ],
   "Math": [
     {
-      "question": "What is the derivative of sin(x)?",
-      "choices": ["cos(x)", "-sin(x)", "-cos(x)", "tan(x)"],
-      "answer": "cos(x)"
+      "question": "What is the derivative of x^2?",
+      "choices": ["2x", "x", "x^2", "2"],
+      "answer": "2x"
     },
     {
-      "question": "What is the integral of 1/x dx?",
-      "choices": ["ln(x)", "e^x", "x^2/2", "1/x^2"],
-      "answer": "ln(x)"
-    },
-    {
-      "question": "What is the value of the golden ratio (φ)?",
-      "choices": ["1.618", "2.718", "3.141", "1.414"],
-      "answer": "1.618"
-    },
-    {
-      "question": "What is the sum of the interior angles of a hexagon?",
-      "choices": ["720 degrees", "540 degrees", "360 degrees", "480 degrees"],
-      "answer": "720 degrees"
-    },
-    {
-      "question": "What is the solution to the equation x^2 - 4x + 4 = 0?",
-      "choices": ["x = 2", "x = 4", "x = 0", "x = -2"],
-      "answer": "x = 2"
-    },
-    {
-      "question": "What is the value of e (Euler's number) to two decimal places?",
-      "choices": ["2.71", "3.14", "1.62", "1.41"],
-      "answer": "2.71"
-    },
-    {
-      "question": "What is the area of a circle with radius r?",
-      "choices": ["πr^2", "2πr", "πr", "r^2"],
-      "answer": "πr^2"
-    },
-    {
-      "question": "What is the Pythagorean theorem?",
-      "choices": ["a^2 + b^2 = c^2", "a^2 - b^2 = c^2", "a^2 + b = c^2", "a + b^2 = c^2"],
-      "answer": "a^2 + b^2 = c^2"
-    },
-    {
-      "question": "What is the value of the square root of 144?",
-      "choices": ["12", "14", "16", "10"],
-      "answer": "12"
-    },
-    {
-      "question": "What is the sum of the first 5 prime numbers?",
-      "choices": ["28", "15", "18", "20"],
-      "answer": "28"
+      "question": "What is the integral of x dx?",
+      "choices": ["x^2/2", "x^2", "1/x", "ln(x)"],
+      "answer": "x^2/2"
     },
     {
       "question": "What is the value of π (pi) to two decimal places?",
@@ -158,9 +143,44 @@
       "answer": "3.14"
     },
     {
-      "question": "What is the formula for the area of a triangle?",
-      "choices": ["1/2 * base * height", "base * height", "base + height", "base - height"],
-      "answer": "1/2 * base * height"
+      "question": "What is the sum of the interior angles of a triangle?",
+      "choices": ["180 degrees", "360 degrees", "90 degrees", "270 degrees"],
+      "answer": "180 degrees"
+    },
+    {
+      "question": "What is the solution to the equation x^2 - 1 = 0?",
+      "choices": ["x = 1 or x = -1", "x = 1", "x = -1", "x = 0"],
+      "answer": "x = 1 or x = -1"
+    },
+    {
+      "question": "What is the value of e (Euler's number) to one decimal place?",
+      "choices": ["2.7", "3.1", "1.6", "1.4"],
+      "answer": "2.7"
+    },
+    {
+      "question": "What is the area of a square with side length s?",
+      "choices": ["s^2", "4s", "2s", "s"],
+      "answer": "s^2"
+    },
+    {
+      "question": "What is the Pythagorean theorem?",
+      "choices": ["a^2 + b^2 = c^2", "a^2 - b^2 = c^2", "a^2 + b = c^2", "a + b^2 = c^2"],
+      "answer": "a^2 + b^2 = c^2"
+    },
+    {
+      "question": "What is the value of the square root of 49?",
+      "choices": ["7", "6", "8", "9"],
+      "answer": "7"
+    },
+    {
+      "question": "What is the sum of the first 3 prime numbers?",
+      "choices": ["10", "15", "18", "20"],
+      "answer": "10"
+    },
+    {
+      "question": "What is the formula for the area of a rectangle?",
+      "choices": ["length * width", "length + width", "2 * (length + width)", "length / width"],
+      "answer": "length * width"
     },
     {
       "question": "What is the value of the square root of 81?",
@@ -178,19 +198,19 @@
       "answer": "3"
     },
     {
-      "question": "What is the value of the factorial of 4 (4!)?",
-      "choices": ["24", "16", "12", "8"],
-      "answer": "24"
+      "question": "What is the value of the factorial of 3 (3!)?",
+      "choices": ["6", "3", "9", "12"],
+      "answer": "6"
     },
     {
-      "question": "What is the value of the logarithm of 100 to the base 10 (log10(100))?",
-      "choices": ["2", "3", "1", "0"],
-      "answer": "2"
+      "question": "What is the value of the logarithm of 1000 to the base 10 (log10(1000))?",
+      "choices": ["3", "2", "1", "0"],
+      "answer": "3"
     },
     {
-      "question": "What is the value of the sine of 30 degrees?",
-      "choices": ["0.5", "1", "0", "-0.5"],
-      "answer": "0.5"
+      "question": "What is the value of the sine of 90 degrees?",
+      "choices": ["1", "0", "-1", "0.5"],
+      "answer": "1"
     },
     {
       "question": "What is the value of the cosine of 0 degrees?",
@@ -201,6 +221,31 @@
       "question": "What is the value of the tangent of 45 degrees?",
       "choices": ["1", "0", "-1", "0.5"],
       "answer": "1"
+    },
+    {
+      "question": "What is the value of the square root of 64?",
+      "choices": ["8", "6", "7", "9"],
+      "answer": "8"
+    },
+    {
+      "question": "What is the formula for the volume of a cube with side length a?",
+      "choices": ["a^3", "a^2", "a", "3a"],
+      "answer": "a^3"
+    },
+    {
+      "question": "What is the value of the cube root of 8?",
+      "choices": ["2", "3", "4", "5"],
+      "answer": "2"
+    },
+    {
+      "question": "What is the sum of the first 5 odd numbers?",
+      "choices": ["25", "15", "20", "30"],
+      "answer": "25"
+    },
+    {
+      "question": "What is the value of the Euler's constant (γ) to one decimal place?",
+      "choices": ["0.6", "0.5", "0.7", "0.8"],
+      "answer": "0.6"
     }
   ],
   "Social Studies": [
@@ -275,11 +320,6 @@
       "answer": "Tokyo"
     },
     {
-      "question": "Who was the first President of the United States?",
-      "choices": ["George Washington", "Thomas Jefferson", "Abraham Lincoln", "John Adams"],
-      "answer": "George Washington"
-    },
-    {
       "question": "What year did the American Civil War begin?",
       "choices": ["1861", "1865", "1877", "1850"],
       "answer": "1861"
@@ -303,6 +343,143 @@
       "question": "Who was the first woman to win a Nobel Prize?",
       "choices": ["Marie Curie", "Rosalind Franklin", "Ada Lovelace", "Dorothy Hodgkin"],
       "answer": "Marie Curie"
+    },
+    {
+      "question": "What year did the Berlin Wall fall?",
+      "choices": ["1989", "1991", "1987", "1993"],
+      "answer": "1989"
+    },
+    {
+      "question": "What is the capital of Brazil?",
+      "choices": ["Brasília", "Rio de Janeiro", "São Paulo", "Salvador"],
+      "answer": "Brasília"
+    },
+    {
+      "question": "Who was the British Prime Minister during World War II?",
+      "choices": ["Winston Churchill", "Neville Chamberlain", "Clement Attlee", "Harold Macmillan"],
+      "answer": "Winston Churchill"
+    }
+  ],
+  "Entertainment": [
+    {
+      "question": "Who directed the movie 'Inception'?",
+      "choices": ["Christopher Nolan", "Steven Spielberg", "James Cameron", "Quentin Tarantino"],
+      "answer": "Christopher Nolan"
+    },
+    {
+      "question": "Which TV show features a character named Walter White?",
+      "choices": ["Breaking Bad", "The Sopranos", "Mad Men", "The Wire"],
+      "answer": "Breaking Bad"
+    },
+    {
+      "question": "Who is the lead singer of the band Queen?",
+      "choices": ["Freddie Mercury", "Mick Jagger", "David Bowie", "Elton John"],
+      "answer": "Freddie Mercury"
+    },
+    {
+      "question": "Which movie won the Oscar for Best Picture in 2020?",
+      "choices": ["Parasite", "1917", "Joker", "Once Upon a Time in Hollywood"],
+      "answer": "Parasite"
+    },
+    {
+      "question": "What is the highest-grossing film of all time?",
+      "choices": ["Avatar", "Avengers: Endgame", "Titanic", "Star Wars: The Force Awakens"],
+      "answer": "Avatar"
+    },
+    {
+      "question": "Who played the character of Jack Dawson in 'Titanic'?",
+      "choices": ["Leonardo DiCaprio", "Brad Pitt", "Johnny Depp", "Tom Cruise"],
+      "answer": "Leonardo DiCaprio"
+    },
+    {
+      "question": "Which artist is known for the hit song 'Thriller'?",
+      "choices": ["Michael Jackson", "Prince", "Madonna", "Whitney Houston"],
+      "answer": "Michael Jackson"
+    },
+    {
+      "question": "What is the name of the fictional country in 'Black Panther'?",
+      "choices": ["Wakanda", "Zamunda", "Genovia", "Latveria"],
+      "answer": "Wakanda"
+    },
+    {
+      "question": "Who wrote the 'Harry Potter' series?",
+      "choices": ["J.K. Rowling", "J.R.R. Tolkien", "George R.R. Martin", "Suzanne Collins"],
+      "answer": "J.K. Rowling"
+    },
+    {
+      "question": "Which actor played the character of Tony Stark in the Marvel Cinematic Universe?",
+      "choices": ["Robert Downey Jr.", "Chris Evans", "Mark Ruffalo", "Chris Hemsworth"],
+      "answer": "Robert Downey Jr."
+    },
+    {
+      "question": "What is the name of the coffee shop in the TV show 'Friends'?",
+      "choices": ["Central Perk", "Monk's Café", "MacLaren's Pub", "The Drunken Clam"],
+      "answer": "Central Perk"
+    },
+    {
+      "question": "Who is the author of 'Game of Thrones'?",
+      "choices": ["George R.R. Martin", "J.K. Rowling", "J.R.R. Tolkien", "Stephen King"],
+      "answer": "George R.R. Martin"
+    },
+    {
+      "question": "Which movie features the quote 'I'll be back'?",
+      "choices": ["The Terminator", "Die Hard", "Predator", "RoboCop"],
+      "answer": "The Terminator"
+    },
+    {
+      "question": "Who won the first season of 'American Idol'?",
+      "choices": ["Kelly Clarkson", "Carrie Underwood", "Fantasia Barrino", "Ruben Studdard"],
+      "answer": "Kelly Clarkson"
+    },
+    {
+      "question": "Which video game franchise features characters named Mario and Luigi?",
+      "choices": ["Super Mario", "The Legend of Zelda", "Metroid", "Donkey Kong"],
+      "answer": "Super Mario"
+    },
+    {
+      "question": "Who played the character of Forrest Gump in the movie 'Forrest Gump'?",
+      "choices": ["Tom Hanks", "Robin Williams", "Bill Murray", "John Travolta"],
+      "answer": "Tom Hanks"
+    },
+    {
+      "question": "Which band released the album 'Abbey Road'?",
+      "choices": ["The Beatles", "The Rolling Stones", "The Who", "Led Zeppelin"],
+      "answer": "The Beatles"
+    },
+    {
+      "question": "What is the name of the dragon in 'The Hobbit'?",
+      "choices": ["Smaug", "Drogon", "Falkor", "Toothless"],
+      "answer": "Smaug"
+    },
+    {
+      "question": "Who directed the movie 'Pulp Fiction'?",
+      "choices": ["Quentin Tarantino", "Martin Scorsese", "Francis Ford Coppola", "Steven Spielberg"],
+      "answer": "Quentin Tarantino"
+    },
+    {
+      "question": "Which TV show is set in the fictional town of Hawkins, Indiana?",
+      "choices": ["Stranger Things", "Twin Peaks", "Riverdale", "The X-Files"],
+      "answer": "Stranger Things"
+    },
+    {
+      "question": "Who directed the movie 'Jurassic Park'?",
+      "choices": ["Steven Spielberg", "James Cameron", "George Lucas", "Quentin Tarantino"],
+      "answer": "Steven Spielberg"
+    },
+    {
+      "question": "Which TV show features a character named Sheldon Cooper?",
+      "choices": ["The Big Bang Theory", "Friends", "How I Met Your Mother", "The Office"],
+      "answer": "The Big Bang Theory"
+    },
+    {
+      "question": "What is the name of the spaceship in 'Star Trek'?",
+      "choices": ["USS Enterprise", "Millennium Falcon", "Serenity", "Galactica"],
+      "answer": "USS Enterprise"
+    },
+    {
+      "question": "Which movie features the song 'My Heart Will Go On'?",
+      "choices": ["Titanic", "The Bodyguard", "Pretty Woman", "Ghost"],
+      "answer": "Titanic"
     }
   ]
 }

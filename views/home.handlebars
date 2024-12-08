@@ -2,17 +2,41 @@
 <html>
 <head>
   <title>Trivia Game</title>
+  <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
 <body>
-  <h1>Welcome to the Trivia Game!</h1>
+  <h1>Ultimate Trivia Challenge</h1>
   <form action="/start" method="post">
     <label for="category">Select Category:</label>
     <select name="category" id="category">
       <option value="Science">Science</option>
       <option value="Math">Math</option>
       <option value="Social Studies">Social Studies</option>
+      <option value="Entertainment">Entertainment</option>
     </select>
     <button type="submit">Start Game</button>
   </form>
+
+  <h2>Leaderboard</h2>
+  <ul>
+    {{#each categories}}
+      <li>{{this}}: {{lookup ../leaderboard this}}</li>
+    {{/each}}
+  </ul>
+
+  <button id="rulesButton">Show Rules</button>
+
+  <div id="rulesModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Game Rules</h2>
+      <p>1. Select a category to start the game.</p>
+      <p>2. You have 3 lives. Each incorrect answer will cost you one life.</p>
+      <p>3. Answer the questions within the given time.</p>
+      <p>4. Try to score as high as possible!</p>
+    </div>
+  </div>
+
+  <script src="/script.js"></script>
 </body>
 </html>

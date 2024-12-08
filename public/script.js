@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var timerElement = document.getElementById('timer');
   var timer = setInterval(function() {
     timeLeft--;
-    timerElement.textContent = 'Time left: ' + timeLeft + ' seconds';
+    timerElement.textContent = 'Time left: ' + timeLeft;
     if (timeLeft <= 0) {
       clearInterval(timer);
       document.querySelector('form').submit();

@@ -7,4 +7,12 @@ function shuffle(array) {
     return array;
 }
 
-module.exports = { shuffle };
+// Function to shuffle choices for each question
+function shuffleChoices(questions) {
+    return questions.map(question => {
+        question.choices = shuffle(question.choices);
+        return question;
+    });
+}
+
+module.exports = { shuffle, shuffleChoices };
