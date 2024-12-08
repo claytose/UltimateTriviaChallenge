@@ -5,7 +5,7 @@ var session = require('express-session');
 var bodyParser = require('body-parser');
 
 var importAllQuestions = require("./questions.json");
-const { shuffle } = require("./logic.js"); // Ensure shuffle is imported correctly
+const { shuffle, shuffleChoices } = require("./logic.js"); // Ensure shuffle and shuffleChoices are imported correctly
 
 var app = express();
 var port = process.env.PORT || 3000;
@@ -32,9 +32,16 @@ app.use(function (req, res, next) {
 	next();
 });
 
+var leaderboard = {};
+
 // Homepage
 app.get('/', function(req, res) {
-  res.render('home', { categories: Object.keys(importAllQuestions) });
+  const categories = Object.keys(importAllQuestions);
+  const leaderboardWithDefaults = categories.reduce((acc, category) => {
+    acc[category] = leaderboard[category] || 0;
+    return acc;
+  }, {});
+  res.render('home', { categories: categories, leaderboard: leaderboardWithDefaults });
 });
 
 // Start game
@@ -47,17 +54,20 @@ app.post('/start', function(req, res) {
   req.session.category = category;
   req.session.lives = 3;
   req.session.score = 0;
-  req.session.questions = shuffle([...importAllQuestions[category]]); // Shuffle questions
+  req.session.questions = shuffleChoices(shuffle([...importAllQuestions[category]])); // Shuffle questions and choices
   res.redirect('/game');
 });
 
 // Game page
 app.get('/game', function(req, res) {
+  if (!req.session.category) {
+    return res.status(404).render('404');
+  }
   if (req.session.lives <= 0) {
     return res.redirect('/gameover');
   }
   if (req.session.questions.length === 0) {
-    return res.redirect('/gameover');
+    return res.redirect('/win');
   }
   const question = req.session.questions[req.session.questions.length - 1];
   res.render('game', { question: question.question, choices: question.choices, lives: req.session.lives, score: req.session.score, message: req.session.message });
@@ -80,7 +90,22 @@ app.post('/game', function(req, res) {
 
 // Game over
 app.get('/gameover', function(req, res) {
-  res.render('gameover', { score: req.session.score });
+  const category = req.session.category;
+  const score = req.session.score;
+  if (!leaderboard[category] || score > leaderboard[category]) {
+    leaderboard[category] = score;
+  }
+  res.render('gameover', { score: score });
+});
+
+// Win page
+app.get('/win', function(req, res) {
+  const category = req.session.category;
+  const score = req.session.score;
+  if (!leaderboard[category] || score > leaderboard[category]) {
+    leaderboard[category] = score;
+  }
+  res.render('win', { score: score });
 });
 
 app.get('*', function (req, res) {

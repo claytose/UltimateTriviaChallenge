@@ -5,19 +5,6 @@
   <script src="/script.js"></script>
 </head>
 <body>
-  <h1>Question</h1>
-  <p>{{question}}</p>
-  <form action="/game" method="post">
-    {{#each choices}}
-      <input type="radio" name="answer" value="{{this}}" required> {{this}}<br>
-    {{/each}}
-    <button type="submit">Submit Answer</button>
-  </form>
-  <p>Lives: {{lives}}</p>
-  <p>Score: {{score}}</p>
-  {{#if message}}
-    <p>{{message}}</p>
-  {{/if}}
-  <p id="timer">Time left: 10 seconds</p>
+  {{> questions}}
 </body>
 </html>
