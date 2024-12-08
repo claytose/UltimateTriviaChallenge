@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+/*document.addEventListener("DOMContentLoaded", () => {
     const gameContainer = document.getElementById("game-container");
   
     // Fetch the Handlebars template from a script tag or external source
@@ -53,3 +53,4 @@ document.addEventListener("DOMContentLoaded", () => {
   
     initGame();
   });
+*/

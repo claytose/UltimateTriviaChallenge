@@ -16,7 +16,6 @@ app.engine('handlebars', exphbs.engine({
 app.set('view engine', 'handlebars');
 
 app.use(express.static('public'));
-app.use('/templates', express.static('public/questionPartTemplate.js')); // Add this line to include the precompiled templates
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true })); // Add this line to parse form data
 app.use(session({
