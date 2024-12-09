@@ -1,4 +1,4 @@
-/* General styles */ 
+/* General styles */
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f0f8ff;
@@ -8,28 +8,32 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   flex-direction: column;
+  overflow-x: hidden; /* Prevent horizontal scroll issues */
 }
 
 h1, h2 {
   color: #2c3e50;
   text-align: center;
+  margin: 0;
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2.5rem;
   margin-bottom: 0.5em;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 2rem;
   margin-top: 0;
 }
 
 p {
-  font-size: 1.2em;
+  font-size: 1rem;
   text-align: center;
+  padding: 0 1rem; /* Add padding for smaller screens */
+  box-sizing: border-box;
 }
 
 /* Form styles */
@@ -39,7 +43,7 @@ form {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   max-width: 400px;
-  width: 100%;
+  width: 90%; /* Ensure forms scale down for smaller screens */
   margin: 20px auto;
 }
 
@@ -57,6 +61,7 @@ select, input[type="radio"] {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  box-sizing: border-box; /* Maintain proper padding on smaller screens */
 }
 
 button {
@@ -66,7 +71,7 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1.2em;
+  font-size: 1rem;
 }
 
 button:hover {
@@ -77,7 +82,7 @@ button:hover {
 a {
   color: #3498db;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1rem;
 }
 
 a:hover {
@@ -86,7 +91,7 @@ a:hover {
 
 /* Timer styles */
 #timer {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   color: #e74c3c;
   text-align: center;
   margin-top: 20px;
@@ -115,7 +120,7 @@ form button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1.2em;
+  font-size: 1rem;
 }
 
 form button:hover {
@@ -127,13 +132,16 @@ div[style*="border: 1px solid #ccc; padding: 10px;"] {
   background-color: #ecf0f1;
   border-radius: 5px;
   text-align: center;
+  width: 100%; /* Ensure proper scaling */
+  max-width: 400px;
+  margin: 10px auto;
 }
 
 /* Sidebar styles */
 .sidebar {
   position: fixed;
-  right: 250px;
-  top: 55%;
+  right: 20px; /* Adjust for smaller screens */
+  top: 50%;
   transform: translateY(-50%);
   width: 200px;
   display: flex;
@@ -148,6 +156,8 @@ div[style*="border: 1px solid #ccc; padding: 10px;"] {
   background-color: #ecf0f1;
   border-radius: 5px;
   text-align: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Rules button styles */
@@ -158,7 +168,7 @@ div[style*="border: 1px solid #ccc; padding: 10px;"] {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1.2em;
+  font-size: 1rem;
   margin-top: 20px;
 }
 
@@ -172,12 +182,12 @@ div[style*="border: 1px solid #ccc; padding: 10px;"] {
   position: fixed;
   z-index: 1;
   left: 0;
-  top: 0; /* Changed from bottom to top */
+  top: 0;
   width: 100%;
-  height: 100%; /* Changed from auto to 100% */
+  height: 100%;
   overflow: auto;
   background-color: rgba(0,0,0,0.4);
-  padding-top: 60px; /* Adjusted padding */
+  padding-top: 60px;
 }
 
 .modal-content {
@@ -185,7 +195,7 @@ div[style*="border: 1px solid #ccc; padding: 10px;"] {
   margin: 5% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 90%; /* Scales down on smaller screens */
   max-width: 500px;
   border-radius: 10px;
 }
@@ -202,4 +212,48 @@ div[style*="border: 1px solid #ccc; padding: 10px;"] {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .sidebar {
+    position: static;
+    transform: none;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  button {
+    font-size: 0.8rem;
+    padding: 6px;
+  }
+
+  #timer {
+    font-size: 1.2rem;
+  }
+
+  form {
+    padding: 15px;
+    max-width: 90%;
+  }
 }
