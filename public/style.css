@@ -103,6 +103,7 @@ a:hover {
   text-align: center;
   margin-top: 20px;
   line-height: 1.5;
+  text-shadow: 1px 1px #910000;
 }
 
 /* High Scores styles */
